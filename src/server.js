@@ -10,15 +10,15 @@ const routes = require('./routes');
 const plot = require('./model');
 
 const app = express();
-app.use(cors());
 const server = http.createServer(app);
 const io = socketIo(server);
 
 // <===================================== Middlewares ========================================>
 
-
+app.use(cors());
 app.use(bodyParser.json());
 app.use('/',(req,res,next) => {
+    console.log(req);
     if (req.url === '/') {
         res.status(200).send('Welcome to the Quitrix Server')
     } else {
