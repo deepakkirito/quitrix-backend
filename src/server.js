@@ -10,12 +10,13 @@ const routes = require('./routes');
 const plot = require('./model');
 
 const app = express();
+app.use(cors());
 const server = http.createServer(app);
 const io = socketIo(server);
 
 // <===================================== Middlewares ========================================>
 
-app.use(cors());
+
 app.use(bodyParser.json());
 app.use('/',(req,res,next) => {
     if (req.url === '/') {
