@@ -32,7 +32,7 @@ const addPlot = (req, res) => {
 
 const sendVideo = (req, res) => {
     // res.status(200).send('https://cdn.glitch.global/529e6edc-0399-461b-8c23-d40e94013348/http-bing.mp4?v=1675900954580');
-    res.status(200).send('');
+    res.status(200).send('https://cdn.glitch.me/529e6edc-0399-461b-8c23-d40e94013348/Quitrix-Assessment-Project-Walkthrough.mp4?v=1675950631000');
 }
 
 module.exports = {
