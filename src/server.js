@@ -36,6 +36,10 @@ io.on('connection', socket => {
         })
     })
     
+    socket.on('disconnect', ()=>{
+        console.log(disconnected);
+    });
+    
 })
 
 app.set('socketio', io);
