@@ -38,7 +38,7 @@ io.on('connection', socket => {
     })
     
     socket.on('disconnect', ()=>{
-        console.log(disconnected);
+        console.log('disconnected');
     });
     
 })
